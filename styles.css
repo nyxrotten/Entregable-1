@@ -86,14 +86,11 @@ li {
 
 .imagen {
     width: 100%;
-    height: 30%;
-    max-height: 600px;
+    
 }
 
 img {
     width: 100%;
-    height: 30%;
-    max-height: 600px;
 }
 
 h1 {
@@ -101,10 +98,9 @@ h1 {
     font-weight: 400;
     font-size: 30px;
     padding-left: 20px;
-    position: absolute;
-    top: 50%;
     left: 1%;
-
+    top: 500px;
+    position: absolute;
 }
 
 .gift {
@@ -152,38 +148,40 @@ h1 {
     border-radius: 25px;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 480px) {
     header {
         padding: 0px 15px;
         justify-content: space-between;
         
     }
-    .menu ul {
+    .menu ul, .menu2 {
         display: none;
     }
-    .menu {
-        order:1;
-    }
-
-    .logo {
-        order: 2;
-    }
+    
     .fa-bars {
         display: flex;
         align-items: center;
     }
-    .user {
-        order: 3;
-    }
+
     img {
         width: 100%;
     }
 
     .chat  {
-        left: 88%;}
+        left: 86%;}
 }
 
-@media (min-width:501px) {
+@media (min-width:481px) {
+    header {
+        padding: 0px 5px;
+        font-size: 15px;
+    }
+
+
+    .menu ul {
+        display: none;
+    }
+
     .fa-bars {
         display: none;
     }
@@ -193,9 +191,13 @@ h1 {
 
     .chat  {
         left: 92%;}
+
 }
 
 @media (min-width: 768px) {
+    .menu2 {
+        display: none;
+    }
     .fa-bars {
         display: none;
     }
@@ -203,6 +205,14 @@ h1 {
         width: 100%;
     }
     .chat  {
-        left: 95%;}
+        left: 93%;}
+
+    .menu ul {
+        display: contents;
+    }
+
+    
+
+
     
 }
